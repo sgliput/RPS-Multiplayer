@@ -27,10 +27,12 @@ var ties;
 
 $(".weapon").on("click", function () {
   $("#winner").empty();
+  $("#yourChoice").empty();
+  $("#opponentChoice").empty();
   if (firstWeapon === 0) {
     firstWeapon = $(this).attr("id");
     console.log($(this).attr("id"));
-    $("#yourChoice").html("<p>You chose " + firstWeapon + ".</p>");
+    $("#yourChoice").html("<p>Player 1 chose " + firstWeapon + ".</p>");
 
     console.log("First Weapon: " + firstWeapon);
 
@@ -59,6 +61,7 @@ database.ref().on("value", function (snapshot) {
     
     secondWeapon = $(this).attr("id");
     console.log("Second Weapon: " + secondWeapon);
+    $("#opponentChoice").html("<p>Player 2 chose " + secondWeapon + ".</p>");
 
     database.ref(id).update({
       secondPlayer: secondWeapon
