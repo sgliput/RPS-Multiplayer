@@ -1,0 +1,17 @@
+#oneChoice{
+    display: none;
+}
+
+#twoChoice{
+    display: none;
+}
+
+#winnerDiv{
+    display: none;
+}
+
+.weapon{
+    width: 200px;
+    height: 150px;
+    cursor: pointer;
+}

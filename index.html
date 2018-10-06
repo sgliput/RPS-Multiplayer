@@ -10,21 +10,33 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-    <h1>Welcome, Players!</h1>
+    <h1>Welcome to Rock, Paper, Scissors, Lizard, Spock!</h1>
+    <button id="player1">Player 1</button>
     <h3>Choose your weapon and see who of you will walk away the victor!</h3>
-    <button id="rock" class="weapon">Rock</button><br>
-    <button id="paper" class="weapon">Paper</button><br>
-    <button id="scissors" class="weapon">Scissors</button><br><br>
-    <div id="winsDiv">Wins:  <span id="wins">0</span></div>
-    <div id="lossesDiv">Losses:  <span id="losses">0</span></div>
+    <img id="Rock" class="weapon" src="assets/images/rock.jpg" alt="Rock">
+    <img id="Scissors" class="weapon" src="assets/images/scissors.jpg" alt="Scissors">
+    <img id="Paper" class="weapon" src="assets/images/paper.jpg" alt="Paper">
+    <img id="Lizard" class="weapon" src="assets/images/lizard.jpg" alt="Lizard">
+    <img id="Spock" class="weapon" src="assets/images/spock.jpg" alt="Spock">
+    <div id="wins1Div">Player 1 Wins:  <span id="player1wins">0</span></div>
+    <div id="wins2Div">Player 2 Wins:  <span id="player2wins">0</span></div>
     <div id="tiesDiv">Ties:  <span id="ties">0</span></div>
 
-    <div id="yourChoice"></div><br>
-    <div id="opponentChoice"></div><br>
-    <div id="winner"></div>
+    <div id="oneChoice">Player 1 chose <span id="oneChoiceChoice"></span>.</div><br>
+    <div id="twoChoice">Player 2 chose <span id="twoChoiceChoice"></span>.</div><br>
+    <div id="winnerDiv">
+        <div id="winner"></div>
+        <button id="beginAgain">Play again!</button>
+        </div>
     <br><br>
     <button id="reset">Reset</button>
-
+<!--
+    <button id="rock" class="weapon">Rock</button><br>
+    <button id="paper" class="weapon">Paper</button><br>
+    <button id="scissors" class="weapon">Scissors</button><br>
+    <button id="lizard" class="weapon">Lizard</button><br>
+    <button id="spock" class="weapon">Spock</button><br><br>
+-->
 
     <script src="assets/javascript/app.js"></script>
 </body>
